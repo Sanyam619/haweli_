@@ -5,7 +5,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
 export default function Contact() {
   return (
-    <div class="w-full h-full bg-yellow-100 bg-opacity-50">
+    <div class="mt-20 w-full h-full bg-yellow-100 bg-opacity-50">
       <div className="flex flex-col pt-[10px]">
         <p className="text-5xl font-bold text-center">Contact Us</p>
         <div className="ml-auto mr-auto flex flex-row items-center justify-center gap-2 mt-3 ">

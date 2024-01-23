@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`w-full p-4 text-black bg-yellow-600 z-20 ${
+        className={`w-full p-4 text-black bg-yellow-600 z-20 fixed top-0 ${
           isScrolled ? "fixed top-0 bg-yellow-600" : ""
         }`}
       >

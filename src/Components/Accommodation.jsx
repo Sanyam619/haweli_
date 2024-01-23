@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
-import logo from '../assets/img/logo.jpg'
-import img4 from '../assets/img/1(10).jpeg'
-import img14 from '../assets/img/1(14).jpeg'
-
-
-
+import React, { useState } from "react";
+import logo from "../assets/img/logo.jpg";
+import img4 from "../assets/img/1(10).jpeg";
+import img14 from "../assets/img/1(14).jpeg";
 
 export default function Accommodation() {
-
   const [currentImage, setCurrentImage] = useState(img4);
   const changepic = () => {
     if (currentImage === img4) {
@@ -25,10 +21,8 @@ export default function Accommodation() {
     }
   };
 
-
-
   return (
-    <div class="w-full h-full bg-yellow-100 bg-opacity-50">
+    <div class="mt-20 w-full h-full bg-yellow-100 bg-opacity-50">
       <div className="flex flex-col w-full justify-center items-center pt-[10px] ">
         <p className="mx-10 text-2xl font-bold">ACCOMMODATION</p>
 
@@ -39,8 +33,9 @@ export default function Accommodation() {
           <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
         <p className="mb-5 font-semibold text-center sm:w-[700px]">
-          Immerse yourself in the epitome of luxury. Book your room now and unlock a world of unparalleled comfort, breathtaking
-          views, and personalized service. Your unforgettable escape begins at our resort.
+          Immerse yourself in the epitome of luxury. Book your room now and
+          unlock a world of unparalleled comfort, breathtaking views, and
+          personalized service. Your unforgettable escape begins at our resort.
         </p>
         <div className="flex flex-col items-center justify-center w-full p-8 sm:flex-row">
           {/* Room 1 */}
@@ -60,7 +55,11 @@ export default function Accommodation() {
               </svg>
             </button>
             <div className="mb-4 w-full h-[500px]">
-              <img src={currentImage} alt="Room 1" className="object-cover w-full h-[500px] rounded-xl" />
+              <img
+                src={currentImage}
+                alt="Room 1"
+                className="object-cover w-full h-[500px] rounded-xl"
+              />
             </div>
             <button className="flex" onClick={changepic}>
               <svg
@@ -85,9 +84,15 @@ export default function Accommodation() {
               <h2 className="text-lg font-semibold">Features</h2>
               <ul className="flex flex-wrap justify-center gap-2 sm:flex-row">
                 <li className="px-3 py-1 bg-yellow-300 rounded-full">1 room</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">1 bathroom</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">1 balcony</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">2 sofas</li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  1 bathroom
+                </li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  1 balcony
+                </li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  2 sofas
+                </li>
               </ul>
             </div>
             {/* Facilities */}
@@ -95,8 +100,12 @@ export default function Accommodation() {
               <h2 className="text-lg font-semibold">Facilities</h2>
               <ul className="flex flex-wrap justify-center gap-2 sm:flex-row">
                 <li className="px-3 py-1 bg-yellow-300 rounded-full">Wifi</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">Television</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">Room Heater</li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  Television
+                </li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  Room Heater
+                </li>
                 <li className="px-3 py-1 bg-yellow-300 rounded-full">Hall</li>
               </ul>
             </div>
@@ -137,7 +146,11 @@ export default function Accommodation() {
               </svg>
             </button>
             <div className="mb-4 w-full h-[500px]">
-              <img src={currentImage1} alt="Room 2" className="object-cover w-full h-[500px] rounded-xl" />
+              <img
+                src={currentImage1}
+                alt="Room 2"
+                className="object-cover w-full h-[500px] rounded-xl"
+              />
             </div>
             <button className="flex" onClick={changepic1}>
               <svg
@@ -161,9 +174,15 @@ export default function Accommodation() {
             <div className="mt-4 text-center">
               <h2 className="text-lg font-semibold">Features</h2>
               <ul className="flex flex-wrap justify-center gap-2 sm:flex-row">
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">8 rooms</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">1 bathroom</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">1 balcony</li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  8 rooms
+                </li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  1 bathroom
+                </li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  1 balcony
+                </li>
                 <li className="px-3 py-1 bg-yellow-300 rounded-full">1 sofa</li>
               </ul>
             </div>
@@ -172,8 +191,12 @@ export default function Accommodation() {
               <h2 className="text-lg font-semibold">Facilities</h2>
               <ul className="flex flex-wrap justify-center gap-2 sm:flex-row">
                 <li className="px-3 py-1 bg-yellow-300 rounded-full">Wifi</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">Television</li>
-                <li className="px-3 py-1 bg-yellow-300 rounded-full">Room Heater</li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  Television
+                </li>
+                <li className="px-3 py-1 bg-yellow-300 rounded-full">
+                  Room Heater
+                </li>
               </ul>
             </div>
             {/* Guests */}
@@ -196,5 +219,5 @@ export default function Accommodation() {
         </div>
       </div>
     </div>
-  )
+  );
 }

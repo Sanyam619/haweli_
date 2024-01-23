@@ -3,7 +3,7 @@ import React from "react";
 export default function TermsofService() {
   return (
     <>
-      <div className="w-full bg-yellow-100 bg-opacity-50">
+      <div className="mt-20 w-full bg-yellow-100 bg-opacity-50">
         <div className="container mx-auto mt-4 px-4 mb-4">
           <h1 className="mt-3 mb-5 text-4xl font-bold text-center">
             Terms of Service

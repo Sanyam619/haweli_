@@ -28,14 +28,14 @@ export default function Home() {
     return () => clearInterval(interval);
   }, [currentIndex, images.length]);
   function nextimg() {
-    setCurrentIndex(function(prevCount) {
+    setCurrentIndex(function (prevCount) {
       return (prevCount = (prevCount + 1) % 3);
     });
   }
   function previmg() {
-    setCurrentIndex(function(prevCount) {
-      if(prevCount===0) {
-        prevCount=images.length;
+    setCurrentIndex(function (prevCount) {
+      if (prevCount === 0) {
+        prevCount = images.length;
       }
       return (prevCount = (prevCount - 1) % 3);
     });
@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <div>
-      <div class="w-full h-full bg-yellow-100 bg-opacity-50">
+      <div class="mt-20 w-full h-full bg-yellow-100 bg-opacity-50">
         <div className="w-full mb-1">
           <div
             id="controls-carousel"
@@ -575,7 +575,9 @@ export default function Home() {
                   <h2 className="mt-4 text-xs font-semibold tracking-widest text-gray-900 title-font">
                     PHONE
                   </h2>
-                  <p className="leading-relaxed font-semibold">+91 9718905221</p>
+                  <p className="leading-relaxed font-semibold">
+                    +91 9718905221
+                  </p>
                 </div>
               </div>
             </div>

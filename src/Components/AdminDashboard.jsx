@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import { useEffect } from "react";
-import { useState } from 'react';
+import { useState } from "react";
 function AdminDashboard() {
   const [empData, setEmpData] = useState();
   const getAllData = async () => {
@@ -29,7 +29,7 @@ function AdminDashboard() {
 
   return (
     <>
-      <div className="mt-1 flex gap-x-4 items-center rounded-full ">
+      <div className=" flex gap-x-4 items-center rounded-full ">
         <table className=" min-w-full divide-y divide-gray-200 dark:divide-gray-700">
           <thead className="bg-gray-50 dark:bg-gray-800">
             <tr>
@@ -105,11 +105,9 @@ function AdminDashboard() {
             ))}
           </tbody>
         </table>
-
       </div>
     </>
-  )
+  );
 }
-
 
 export default AdminDashboard;
